@@ -1,16 +1,16 @@
 # Knowledge Representation on the Web 
 
 
-part 1: RDF 
+part 1: RDF  
 Go through the notebook [rdf-tutorial](rdf-tutorial.ipynb)
 
 part 2: RDFS  
 Go through the notebook [rdfs-tutorial](rdfs-tutorial.ipynb)
 
-part 3: OWL 
+part 3: OWL  
 Try out the notebook [OWL-tutorial](OWL-tutorial.ipynb)
 
-part 4: SPARQL 
+part 4: SPARQL  
 Notebook [SPARQL-tutorial](SPARQL-tutorial.ipynb)
 
 part 5: RDFstar  
@@ -19,7 +19,7 @@ Notebook [RDFstar-tutorial](ML4KG-tutorial.md)
 part 6: Machine Learning over KGs  
 Notebook [ML4KG-tutorial](ML4KG-tutorial.ipynb)
 
-part 7 : Entity Linking and Relation Extraction
+part 7: Entity Linking and Relation Extraction  
 - [Slides](https://docs.google.com/presentation/d/1wtjZ40dJqWiKyxgsJgApVtcjN_1567MF6RNXHL4eg-s/edit?usp=sharing)
 - [Google Colab notebook](https://colab.research.google.com/drive/1-JDcOIHeWDd0Wj21RjtcUgEyOayUjiNf?usp=sharing)
 
