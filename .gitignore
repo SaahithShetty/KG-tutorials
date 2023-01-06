@@ -1,3 +1,5 @@
+
 checkpoint*
 GoT*
 *.pkl
+*.ipynb_checkpoints*
