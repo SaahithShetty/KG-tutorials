@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://test.org/myonto.owl"
+         xmlns="http://test.org/myonto.owl#">
+
+<owl:Ontology rdf:about="http://test.org/myonto.owl"/>
+
+<owl:ObjectProperty rdf:about="#authorOf">
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#locatedIn">
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hasGenre">
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hasFan">>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#bandMember">
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#collaboratesWith">
+</owl:ObjectProperty>
+
+<owl:DatatypeProperty rdf:about="#followers">
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#name">
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#releaseDate">
+</owl:DatatypeProperty>
+
+<owl:Class rdf:about="#Artist">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Song">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Location">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Genre">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Person">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Member">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#SoloArtist">
+  <rdfs:subClassOf rdf:resource="#Person"/>
+  <rdfs:subClassOf rdf:resource="#Artist"/>
+</owl:Class>
+
+<owl:Class rdf:about="#SubGenre">
+  <rdfs:subClassOf rdf:resource="#Genre"/>
+</owl:Class>
+
+<owl:Class rdf:about="#CollaboratingArtist">
+  <rdfs:subClassOf rdf:resource="#Artist"/>
+</owl:Class>
+
+</rdf:RDF>
