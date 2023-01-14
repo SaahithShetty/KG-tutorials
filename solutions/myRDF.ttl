@@ -1,0 +1,9 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://example.org/crocodile> a <https://example.org/Amphibia> .
+
+<https://example.org/whale> a <https://example.org/Mammalia> ;
+    rdfs:label "whale" .
+
+<https://example.org/Amphibia> rdfs:subClassOf <https://example.org/Animalia> .
+
