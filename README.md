@@ -1,4 +1,4 @@
-# Knowledge Representation on the Web 2022
+# Knowledge Representation on the Web 2023
 
 
 Assignment 1: RDF, RDFS and OWL
