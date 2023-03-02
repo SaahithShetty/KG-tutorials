@@ -1,0 +1,12 @@
+<http://purl.org/heals/ingredient/AlmondBiscotti2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/heals/ingredient/AlmondBiscotti2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/heals/food/Recipe> .
+<http://purl.org/heals/ingredient/AlmondBiscotti2> <http://www.w3.org/2000/01/rdf-schema#label> "almond biscotti2" .
+<http://purl.org/heals/ingredient/AlmondBiscotti2> <http://purl.org/heals/food/isRecommendedForCourse> <http://purl.org/heals/food/Dessert> .
+<http://purl.org/heals/ingredient/AlmondBiscotti2> <http://purl.org/heals/food/isRecommendedForMeal> <http://purl.org/heals/food/Snack> .
+<http://purl.org/heals/ingredient/AlmondBiscotti2> <http://purl.org/heals/food/hasCookTime> "120"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.org/heals/ingredient/AlmondBiscotti2> <http://purl.org/heals/food/hasCookingTemperature> "350"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.org/heals/ingredient/AlmondBiscotti2> <http://purl.org/heals/food/serves> "15"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.org/heals/ingredient/AlmondBiscotti2> <http://purl.org/dc/terms/source> "Allrecipes.com, \"Chef John's Almond Biscotti2,\" 2010. [Online]. Available: https://www.allrecipes.com/recipe/260575/chef-johns-almond-biscotti2/?internalSource=hub%20recipe&referringContentType=Search. [Accessed Nov.9, 2018]" .
+<http://purl.org/heals/ingredient/AlmondBiscotti2> <http://www.w3.org/2004/02/skos/core#definition> "a hard italian bread made from almonds" .
+<http://purl.org/heals/ingredient/AlmondBiscotti2> <http://www.w3.org/2004/02/skos/core#scopeNote> "recipe" .
+<http://purl.org/heals/ingredient/AlmondBiscotti2> <http://www.w3.org/ns/prov#wasDerivedFrom> "https://www.allrecipes.com/recipe/260575/chef-johns-almond-biscotti2/?internalSource=hub%20recipe&referringContentType=Search." .
