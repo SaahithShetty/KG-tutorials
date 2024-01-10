@@ -1,11 +1,11 @@
 # Knowledge Representation on the Web 
 
 ## Getting started
-Each time you do a project in Python, it is highly recommended to create a virtual python environment to keep the base python environment of your system 'clean', and easily allow you to switch version if needed. This time is no different. To prevent issues regarding the installation of python packages, we highly recommend creating a virtual environment of version `3.10.13`. For instructions on how to do this, have a look at popular python environment mangagers such as [conda](https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/), [PyEnv](https://github.com/pyenv/pyenv-virtualenv), and [PyFlow](https://github.com/David-OConnor/pyflow#installation). 
+Each time you do a project in Python, it is highly recommended to create a virtual python environment to keep the base python environment of your system 'clean', and easily allow you to switch version if needed. This time is no different. To prevent issues regarding the installation of python packages, we highly recommend creating a virtual environment of version `3.10.13`. For instructions on how to do this, have a look at popular python environment mangagers such as [conda](https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/), [pyenv](https://github.com/pyenv/pyenv-virtualenv), and [PyFlow](https://github.com/David-OConnor/pyflow#installation). 
 
 Once the virtual environment has been created and activated, the necesary package can be installed using either `$conda install --file requirements.txt` when using conda, `$pip install -r requirements.txt` for pyenv, or `$pyflow init` for PyFlow. 
 
-To use the newly created virtual python environment in Jupyter Notebook, move to the right directory, open a terminal, activate the virtual environment (i.e. `$conda activate [YOUR_VENV]` of `pyenv activate [YOUR_VENV]` if you are using conda or pyenv. PyFlow should do this automatically), and start a local jupyter server (i.e. `$jupyter notebook`). Instructions on how to access the server should be printed in the terminal.
+To use the newly created virtual python environment in Jupyter Notebook, move to the right directory, open a terminal, activate the virtual environment (i.e. `$conda activate [YOUR_VENV]` or `$pyenv activate [YOUR_VENV]` if you are using conda or pyenv. PyFlow should do this automatically), and start a local jupyter server (i.e. `$jupyter notebook`). Instructions on how to access the server should be printed in the terminal.
 
 Feel free to reach out to the TAs if you have any questions!
 
