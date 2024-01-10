@@ -5,7 +5,11 @@ Each time you do a project in Python, it is highly recommended to create a virtu
 
 Once the virtual environment has been created and activated, the necesary package can be installed using either `$conda install --file requirements.txt` when using conda, `$pip install -r requirements.txt` for pyenv, or `$pyflow init` for PyFlow. 
 
-To use the newly created virtual python environment in Jupyter Notebook, move to the right directory, open a terminal, activate the virtual environment (i.e. `$conda activate [YOUR_VENV]` or `$pyenv activate [YOUR_VENV]` if you are using conda or pyenv. PyFlow should do this automatically), and start a local jupyter server (i.e. `$jupyter notebook`). Instructions on how to access the server should be printed in the terminal.
+To use the newly created virtual python environment in Jupyter Notebook;
+- move to the right directory,
+- open a terminal,
+- activate the virtual environment (i.e. `$conda activate [YOUR_VENV]` or `$pyenv activate [YOUR_VENV]` if you are using conda or pyenv. PyFlow should do this automatically),
+- and start a local jupyter server (i.e. `$jupyter notebook`). Instructions on how to access the server should be printed in the terminal.
 
 Feel free to reach out to the TAs if you have any questions!
 
