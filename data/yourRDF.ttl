@@ -1,1 +1,11 @@
+@prefix ns1: <https://example.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ns1:whale a ns1:Mammalia ;
+    rdfs:label "whale" ;
+    ns1:eats ns1:crocodile .
+
+ns1:Amphibia rdfs:subClassOf ns1:Animalia .
+
+ns1:crocodile a ns1:Amphibia .
 

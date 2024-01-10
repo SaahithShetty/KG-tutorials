@@ -173,67 +173,67 @@
   <rdfs:subClassOf rdf:resource="#Artist"/>
 </owl:Class>
 
-<Artist rdf:about="#biffy_clyro">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="#biffy_clyro">
+  <rdf:type rdf:resource="#Artist"/>
   <authorOf rdf:resource="#Space"/>
   <locatedIn rdf:resource="#Scotland"/>
-</Artist>
+</owl:NamedIndividual>
 
-<Artist rdf:about="#massive_attack">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="#massive_attack">
+  <rdf:type rdf:resource="#Artist"/>
   <locatedIn rdf:resource="#United_Kingdom"/>
-</Artist>
+</owl:NamedIndividual>
 
-<SoloArtist rdf:about="#tricky">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="#tricky">
+  <rdf:type rdf:resource="#SoloArtist"/>
   <collaboratesWith rdf:resource="#massive_attack"/>
-</SoloArtist>
+</owl:NamedIndividual>
 
-<Person rdf:about="#ilaria">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="#ilaria">
+  <rdf:type rdf:resource="#Person"/>
   <isFanOf rdf:resource="#biffy_clyro"/>
   <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19-03-1997</birthDate>
-</Person>
+</owl:NamedIndividual>
 
-<Person rdf:about="#lise">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="#lise">
+  <rdf:type rdf:resource="#Person"/>
   <isFanOf rdf:resource="#massive_attack"/>
   <height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">172</height>
-</Person>
+</owl:NamedIndividual>
 
-<Song rdf:about="#Space">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</Song>
+<owl:NamedIndividual rdf:about="#Space">
+  <rdf:type rdf:resource="#Song"/>
+</owl:NamedIndividual>
 
-<Location rdf:about="#United_Kingdom">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</Location>
+<owl:NamedIndividual rdf:about="#United_Kingdom">
+  <rdf:type rdf:resource="#Location"/>
+</owl:NamedIndividual>
 
-<Location rdf:about="#Scotland">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="#Scotland">
+  <rdf:type rdf:resource="#Location"/>
   <locatedIn rdf:resource="#United_Kingdom"/>
-</Location>
+</owl:NamedIndividual>
 
-<Location rdf:about="#Edinburgh">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="#Edinburgh">
+  <rdf:type rdf:resource="#Location"/>
   <locatedIn rdf:resource="#Scotland"/>
-</Location>
+</owl:NamedIndividual>
 
-<Genre rdf:about="#pop">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</Genre>
+<owl:NamedIndividual rdf:about="#pop">
+  <rdf:type rdf:resource="#Genre"/>
+</owl:NamedIndividual>
 
-<Genre rdf:about="#rock">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</Genre>
+<owl:NamedIndividual rdf:about="#rock">
+  <rdf:type rdf:resource="#Genre"/>
+</owl:NamedIndividual>
 
-<Genre rdf:about="#triphop">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</Genre>
+<owl:NamedIndividual rdf:about="#triphop">
+  <rdf:type rdf:resource="#Genre"/>
+</owl:NamedIndividual>
 
-<SubGenre rdf:about="#experimentalRock">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</SubGenre>
+<owl:NamedIndividual rdf:about="#experimentalRock">
+  <rdf:type rdf:resource="#SubGenre"/>
+</owl:NamedIndividual>
 
 <owl:AllDifferent>
   <owl:distinctMembers rdf:parseType="Collection">

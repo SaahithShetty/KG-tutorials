@@ -1,0 +1,12 @@
+notebook
+pandas
+networkx
+rdflib
+owlready2
+matplotlib
+seaborn
+pykeen
+owlrl
+
+torch
+
