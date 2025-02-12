@@ -1,0 +1,362 @@
+@prefix : <http://example.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://example.org/contains
+:contains rdf:type owl:ObjectProperty ;
+          owl:inverseOf :hasLocation ;
+          rdfs:domain :Location ;
+          rdfs:range :Object .
+
+
+###  http://example.org/hasLocation
+:hasLocation rdf:type owl:ObjectProperty ,
+                      owl:TransitiveProperty.
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://example.org/hasCoordinates
+:hasCoordinates rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://example.org/hasGeometry
+:hasGeometry rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :Room .
+
+
+###  http://example.org/hasStatus
+:hasStatus rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Door .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://example.org/Bed
+:Bed rdf:type owl:Class ;
+     rdfs:subClassOf :Object .
+
+
+###  http://example.org/BedRoom
+:BedRoom rdf:type owl:Class ;
+         rdfs:subClassOf :Room .
+
+
+###  http://example.org/Chair
+:Chair rdf:type owl:Class ;
+       rdfs:subClassOf :Object .
+
+
+###  http://example.org/Door
+:Door rdf:type owl:Class ;
+      owl:equivalentClass [ rdf:type owl:Class ;
+                            owl:oneOf ( :door1
+                                        :door2
+                                        :door3
+                                        :door4
+                                        :entrance
+                                      )
+                          ] ;
+      rdfs:subClassOf :Location .
+
+
+###  http://example.org/Fridge
+:Fridge rdf:type owl:Class ;
+        owl:equivalentClass [ rdf:type owl:Class ;
+                              owl:oneOf ( :fridge1
+                                        )
+                            ] ;
+        rdfs:subClassOf :KitchenObject .
+
+
+###  http://example.org/Kitchen
+:Kitchen rdf:type owl:Class ;
+         owl:equivalentClass [ rdf:type owl:Restriction ;
+                               owl:onProperty :contains ;
+                               owl:someValuesFrom [ rdf:type owl:Class ;
+                                                    owl:unionOf ( :Fridge
+                                                                  :Sink
+                                                                  :Stove
+                                                                )
+                                                  ]
+                             ] ;
+         rdfs:subClassOf :Room .
+
+
+###  http://example.org/KitchenObject
+:KitchenObject rdf:type owl:Class ;
+               rdfs:subClassOf :Object .
+
+
+###  http://example.org/LivingRoom
+:LivingRoom rdf:type owl:Class ;
+            rdfs:subClassOf :Room .
+
+
+###  http://example.org/Location
+:Location rdf:type owl:Class .
+
+
+###  http://example.org/Object
+:Object rdf:type owl:Class .
+
+
+###  http://example.org/Room
+:Room rdf:type owl:Class ;
+      rdfs:subClassOf :Location .
+
+
+###  http://example.org/Shelf
+:Shelf rdf:type owl:Class ;
+       owl:equivalentClass [ rdf:type owl:Class ;
+                             owl:oneOf ( :bookshelf1
+                                         :bookshelf2
+                                       )
+                           ] ;
+       rdfs:subClassOf :Object .
+
+
+###  http://example.org/Sink
+:Sink rdf:type owl:Class ;
+      owl:equivalentClass [ rdf:type owl:Class ;
+                            owl:oneOf ( :sink1
+                                      )
+                          ] ;
+      rdfs:subClassOf :KitchenObject .
+
+
+###  http://example.org/Sofa
+:Sofa rdf:type owl:Class ;
+      rdfs:subClassOf :Object .
+
+
+###  http://example.org/Stove
+:Stove rdf:type owl:Class ;
+       owl:equivalentClass [ rdf:type owl:Class ;
+                             owl:oneOf ( :stove1
+                                       )
+                           ] ;
+       rdfs:subClassOf :KitchenObject .
+
+
+###  http://example.org/Table
+:Table rdf:type owl:Class ;
+       owl:equivalentClass [ rdf:type owl:Class ;
+                             owl:oneOf ( :table1
+                                         :table2
+                                         :table3
+                                       )
+                           ] ;
+       rdfs:subClassOf :Object .
+
+
+###  http://example.org/Wardrobe
+:Wardrobe rdf:type owl:Class ;
+          owl:equivalentClass [ rdf:type owl:Class ;
+                                owl:oneOf ( :wardrobe1
+                                          )
+                              ] ;
+          rdfs:subClassOf :Location ,
+                          :Object .
+
+
+###  https://example.org/Box
+<https://example.org/Box> rdf:type owl:Class ;
+                          rdfs:subClassOf :Object .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://example.org/bed1
+:bed1 rdf:type owl:NamedIndividual ,
+               :Bed ;
+      :hasLocation :room1 ;
+      :hasCoordinates "(-9.5, 1.5, 1.57, 1.6)" ;
+      rdfs:label "bed 1" .
+
+
+###  http://example.org/bookshelf1
+:bookshelf1 rdf:type owl:NamedIndividual ,
+                     :Shelf ;
+            :hasLocation :room1 ;
+            :hasCoordinates "(-2.51, 6.4, 0.0, 0.4)" ;
+            rdfs:label "bookshelf 1" .
+
+
+###  http://example.org/bookshelf2
+:bookshelf2 rdf:type owl:NamedIndividual ,
+                     :Shelf ;
+            :hasLocation :room1 ;
+            :hasCoordinates "(-3.6, 6.4, 0.0, 0.4)" ;
+            rdfs:label "bookshelf 2" .
+
+
+###  http://example.org/bookshelf3
+:bookshelf3 rdf:type owl:NamedIndividual ,
+                     :Shelf ;
+            :hasLocation :room4 ;
+            rdfs:label "bookshelf 3" .
+
+
+###  http://example.org/door1
+:door1 rdf:type owl:NamedIndividual ;
+       :hasCoordinates "(1.0, -5.4, 0.0, 0.2)" ;
+       :hasStatus "open" .
+
+
+###  http://example.org/door2
+:door2 rdf:type owl:NamedIndividual ;
+       :hasCoordinates "(1.0, 2.6, 0.0, 0.2)" ;
+       :hasStatus "open" .
+
+
+###  http://example.org/door3
+:door3 rdf:type owl:NamedIndividual ;
+       :hasCoordinates "(-1.2, -1.2, 1.57, 0.2)" ;
+       :hasStatus "open" .
+
+
+###  http://example.org/door4
+:door4 rdf:type owl:NamedIndividual ;
+       :hasCoordinates "(-3.0, -5.4, 0.0, 0.2)" ;
+       :hasStatus "open" .
+
+
+###  http://example.org/entrance
+:entrance rdf:type owl:NamedIndividual ,
+                   :Door ;
+          :hasCoordinates "(-1.0, -8.0, 0.0, 0.0)" .
+
+
+###  http://example.org/fridge1
+:fridge1 rdf:type owl:NamedIndividual ,
+                  :Fridge ;
+         :hasCoordinates "(-7.0, -9.0, 3.14, 1.6)" ;
+         rdfs:label "fridge 1" .
+
+
+###  http://example.org/room1
+:room1 rdf:type owl:NamedIndividual ,
+                :Room ;
+       :hasGeometry "[-11.0, -1.5, 12.0, 8.0]" ;
+       rdfs:label "room 1" .
+
+
+###  http://example.org/room2
+:room2 rdf:type owl:NamedIndividual ,
+                :Room ;
+       :contains :fridge1 ,
+                 :sink1 ,
+                 :stove1 ;
+       :hasGeometry "[-11.0, -9.5, 8.0, 8.0]" ;
+       rdfs:label "room 2" .
+
+
+###  http://example.org/room3
+:room3 rdf:type owl:NamedIndividual ,
+                :Room ;
+       :hasGeometry "[-3.0, -9.5, 4.0, 8.0]" ;
+       rdfs:label "room 3" .
+
+
+###  http://example.org/room4
+:room4 rdf:type owl:NamedIndividual ,
+                :Room ;
+       :hasGeometry "[1.0, -9.5, 10.0, 16.0]" ;
+       rdfs:label "room 4" .
+
+
+###  http://example.org/sink1
+:sink1 rdf:type owl:NamedIndividual ,
+                :Sink ;
+       :hasCoordinates "(-10.4, -5.0, 1.57, 1.0)" ;
+       rdfs:label "sink 1" .
+
+
+###  http://example.org/stove1
+:stove1 rdf:type owl:NamedIndividual ,
+                 :Stove ;
+        :hasCoordinates "(-7.0, -2.3, 0.0, 0.8)" ;
+        rdfs:label "stove 1" .
+
+
+###  http://example.org/table1
+:table1 rdf:type owl:NamedIndividual ,
+                 :Table ;
+        :hasLocation :room4 ;
+        :hasCoordinates "(5.0, 0.0, 0.0, 0.8)" ;
+        rdfs:label "table 1" .
+
+
+###  http://example.org/table2
+:table2 rdf:type owl:NamedIndividual ,
+                 :Table ;
+        :hasLocation :room4 ;
+        :hasCoordinates "(5.0, 5.5, 0.0, 1.2)" ;
+        rdfs:label "table 2" .
+
+
+###  http://example.org/table3
+:table3 rdf:type owl:NamedIndividual ,
+                 :Table ;
+        :hasLocation :room2 ;
+        :hasCoordinates "(5.0, -5.0, 0.0, 1.6)" ;
+        rdfs:label "table 3" .
+
+
+###  http://example.org/table4
+:table4 rdf:type owl:NamedIndividual ,
+                 :Table ;
+        :hasCoordinates "(-6.6, -4.8, 0.0, 0.8)" ;
+        rdfs:label "table 4" .
+
+
+###  http://example.org/wardrobe1
+:wardrobe1 rdf:type owl:NamedIndividual ,
+                    :Wardrobe ;
+           :hasLocation :room1 ;
+           :hasCoordinates "(-8.0, 5.76, 0.0, 2.2)" ;
+           rdfs:label "wardrobe 1" .
+
+
+###  http://example.org/box1
+<http://example.org/box1> rdf:type owl:NamedIndividual ,
+                                    :Box ;
+                           :hasLocation :room1 ;
+                           rdfs:label "box 1" .
+
+
+###  http://example.org/box2
+<http://example.org/box2> rdf:type owl:NamedIndividual ,
+                                    :Box ;
+                           :hasLocation :room4 ;
+                           rdfs:label "box 2" .
+
+
+###  http://example.org/box3
+<http://example.org/box3> rdf:type owl:NamedIndividual ,
+                                    :Box ;
+                           :hasLocation :room4 ;
+                           rdfs:label "box 3" .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
