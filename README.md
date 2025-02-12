@@ -21,7 +21,7 @@ part 2: RDFS
 Go through the notebook [rdfs-tutorial](rdfs-tutorial.ipynb)
 
 part 3: OWL  
-Try out the notebook [OWL-tutorial](OWL-tutorial.ipynb)
+Try out the notebooks [OWL-1-tutorial](OWL-1-tutorial.ipynb) and [OWL-2-tutorial](OWL-2-tutorial.ipynb)
 
 part 4: SPARQL  
 Notebook [SPARQL-tutorial](SPARQL-tutorial.ipynb)
