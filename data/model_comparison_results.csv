@@ -1,0 +1,7 @@
+model_id,model_name,dimensions,epochs,learning_rate,loss_function,regularizer_p,regularizer_weight,negative_sampler_filtered,mrr,hits@10,hits@3,hits@1,model_path
+exp1_ComplEx_baseline,ComplEx,150,200,0.001,pairwisehinge,3,1e-05,True,0.004366287030279636,0.0047169811320754715,0.0031446540880503146,0.0,./data/exp1_ComplEx_baseline/model.pkl
+exp2_ComplEx_high_dim,ComplEx,250,200,0.001,pairwisehinge,3,1e-05,True,0.004366287030279636,0.0047169811320754715,0.0031446540880503146,0.0,./data/exp2_ComplEx_high_dim/model.pkl
+exp3_ComplEx_softplus,ComplEx,150,200,0.001,softplus,3,1e-05,True,0.002975752577185631,0.0015723270440251573,0.0,0.0,./data/exp3_ComplEx_softplus/model.pkl
+exp4_ComplEx_high_lr,ComplEx,150,200,0.005,pairwisehinge,3,1e-05,True,0.006817359011620284,0.0110062893081761,0.0031446540880503146,0.0015723270440251573,./data/exp4_ComplEx_high_lr/model.pkl
+exp5_ComplEx_L2reg,ComplEx,150,200,0.001,pairwisehinge,2,1e-05,True,0.004367126617580652,0.0047169811320754715,0.0031446540880503146,0.0,./data/exp5_ComplEx_L2reg/model.pkl
+exp6_TransE,TransE,150,200,0.001,pairwisehinge,3,1e-05,True,0.06863115727901459,0.1871069182389937,0.09276729559748427,0.0047169811320754715,./data/exp6_TransE/model.pkl

@@ -1,0 +1,4 @@
+model_id,model_name,dimensions,epochs,learning_rate,loss_function,regularizer_p,regularizer_weight,negative_sampler_filtered,mrr,hits@10,hits@3,hits@1,model_path,split
+best_config_85_15_split,TransE,150,200,0.001,pairwisehinge,3,1e-05,True,0.061281129717826836,0.1719077568134172,0.06918238993710692,0.006289308176100629,./data/best_config_85_15_split/model.pkl,85/15
+exp6_TransE,TransE,150,200,0.001,pairwisehinge,3,1e-05,True,0.06863115727901459,0.1871069182389937,0.09276729559748427,0.0047169811320754715,./data/exp6_TransE/model.pkl,90/10
+best_config_95_5_split,TransE,150,200,0.001,pairwisehinge,3,1e-05,True,0.0676296129822731,0.20125786163522014,0.07547169811320754,0.0031446540880503146,./data/best_config_95_5_split/model.pkl,95/5
